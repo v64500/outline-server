@@ -331,6 +331,11 @@
       .flex-1 {
         flex: 1;
       }
+      /* Mirror icons */
+      :host(:dir(rtl)) iron-icon, :host(:dir(rtl)) .share-button,
+      :host(:dir(rtl)) .access-key-icon {
+        transform: scaleX(-1);
+      }
     </style>
 
     <div class="container">
@@ -496,6 +501,7 @@
             server-hostname="[[serverHostname]]"
             server-management-api-url="[[serverManagementApiUrl]]"
             server-port-for-new-access-keys="[[serverPortForNewAccessKeys]]"
+            is-access-key-port-editable="[[isAccessKeyPortEditable]]"
             server-creation-date="[[serverCreationDate]]"
             server-monthly-cost="[[monthlyCost]]"
             server-monthly-transfer-limit="[[_formatBytesTransferred(monthlyOutboundTransferBytes)]]"
@@ -535,6 +541,7 @@
         serverHostname: String,
         serverManagementApiUrl: String,
         serverPortForNewAccessKeys: Number,
+        isAccessKeyPortEditable: {type: Boolean, value: false},
         serverCreationDate: String,
         serverLocation: String,
         isServerManaged: Boolean,
@@ -719,6 +726,9 @@
         let utilizationPercentage = 0;
         if (monthlyLimitBytes && numBytes) {
           utilizationPercentage = Math.round(numBytes / monthlyLimitBytes * 100);
+        }
+        if (document.documentElement.dir === 'rtl') {
+          return `%${utilizationPercentage}`;
         }
         return `${utilizationPercentage}%`
       },

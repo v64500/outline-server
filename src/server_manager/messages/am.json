@@ -1,6 +1,6 @@
 {
   "about_outline": {
-    "message": "Outline is an open source project created by $JIGSAW$ to provide a safer way for news organizations and journalists to access the internet.$NEW_LINE$$NEW_LINE$ Outline is powered by $SHADOWSOCKS$ and is still an early stage product. You can contribute to the code on $GITHUB$, and follow us on $REDDIT$ and $MEDIUM$ to hear when we expand to more platforms and add new features.",
+    "message": "አውትላይን በ$JIGSAW$የተዘጋጀ ክፍት ምንጭ ፕሮጀክት ሲሆን ለዜና አቅራቢ ድርጅቶችና ጋዜጠኞች ደኅንነቱ የተጠበቀ የኢንተርኔት አጠቃቀምን እንዲያገኙ ታልሞ የተዘጋጀ ነው፡፡ $NEW_LINE$$NEW_LINE$ አውትላይን በ  $SHADOWSOCKS$ የተደገፈ አዲስ ምርት ነው፡፡  በ4$GITHUB$ ላይ ለፕሮግራሙ አስተዋፅዖ ማድረግ ይችላሉ፡፡ በተጨማሪም 5$REDDIT$ እና 6$MEDIUM$ ላይ ሊከታተሉን እና መድረካችንን እና አገልግሎቶቻችንን ስናሳድግ መስማት ይችላሉ።",
     "description": "This string appears in a dialog as a paragraph to provide a description of the product. Outline is the product name and should not be translated.",
     "placeholders": {
       "GITHUB": {
@@ -24,7 +24,7 @@
     }
   },
   "about_version": {
-    "message": "Version $VERSION$",
+    "message": "ሥሪት $VERSION$",
     "description": "This string appears in a dialog as a header to indicate the version of the application.",
     "placeholders": {
       "VERSION": {
@@ -34,7 +34,7 @@
     }
   },
   "aws_group_assign_0": {
-    "message": "Navigate to $START_OF_LINK$Instances$END_OF_LINK$.",
+    "message": "አብነቶችን ወደ $START_OF_LINK$ ከ$END_OF_LINK$ ይፈልጉ።",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a security group in Amazon Web Services.",
     "placeholders": {
       "END_OF_LINK": {
@@ -46,19 +46,19 @@
     }
   },
   "aws_group_assign_1": {
-    "message": "Click 'Actions' > 'Networking' > 'Change Security Groups' at the top of the 'Instances' screen.",
+    "message": "'ተግባራት' ጠቅ ያድርጉ > 'አውታረመረብ' > ከ'አብነት' ሰሌዳው አናት ላይ ያለውን 'የደኅንነት ቡድኖችን' ይቀይሩ'።  \n\n",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a security group in Amazon Web Services. Words in quotes should be translated and included untranslated in parentheses."
   },
   "aws_group_assign_2": {
-    "message": "Select the 'outline' Security Group, unselect other security groups.",
+    "message": "የ'አውትላይን' የደኅንነት ቡድንን ይምረጡ፤ ሌሎች የደኅንነት ቡድኖችን አይመረጡ።",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a security group in Amazon Web Services. 'Security Group' should be translated and included untranslated in parentheses."
   },
   "aws_group_assign_3": {
-    "message": "Click 'Assign Security Groups'.",
+    "message": "'የደኅንነት ቡድኖችን መድቡ'' የሚለን ጠቅ ያድርጉ።",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a security group in Amazon Web Services. 'Assign Security Groups' should be translated and included untranslated in parentheses."
   },
   "aws_group_create_0": {
-    "message": "Once you've created your EC2 instance, open the $START_OF_LINK$EC2 Management Console$END_OF_LINK$.",
+    "message": "የኢሲ2 አብነትዎን ከፈጠሩ በኋላ፣  የ$START_OF_LINK$ን ኢሲቱ ማስተዳደሪያ $END_OF_LINK$ይክፈቱ።",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a security group in Amazon Web Services. EC2 is a product name and should not be translated.",
     "placeholders": {
       "END_OF_LINK": {
@@ -70,175 +70,159 @@
     }
   },
   "aws_group_create_1": {
-    "message": "Under 'Network & Security', select 'Security Groups'.",
+    "message": "በ'አውታረ መረብና ደኅንነት' ስር የ'ደኅንነት ቡድኖች'ን ይምረጡ።",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a security group in Amazon Web Services. Phrases in quotes should be translated and included untranslated in parentheses."
   },
   "aws_group_create_2": {
-    "message": "Click on 'Create Security Group'.",
+    "message": "'የደኅንነት ቡድን ይፍጠሩ' የሚለውን ክሊክ ያድርጉ።",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a security group in Amazon Web Services. 'Create Security Group' should be translated and included untranslated in parentheses."
   },
   "aws_group_create_3": {
-    "message": "Type 'outline' in the 'Security group name' and 'Description' fields.",
+    "message": "የ'ደኅንነት ግሩፕ ስም' እና 'ገለጻ' የሚለው ሥር 'አውትላይን' ብለው ይጻፉ።",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a security group in Amazon Web Services. Phrases in quotes should be translated and included untranslated in parentheses."
   },
   "aws_group_create_4": {
-    "message": "Click 'Add Rule'.",
+    "message": "'ደንብ አክል' የሚለውን ክሊክ ያድርጉ።",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a security group in Amazon Web Services. 'Add rule' should be translated and included untranslated in parentheses."
   },
   "aws_group_create_5": {
-    "message": "Select 'All traffic' under 'Type', and 'Anywhere' under 'Source'.",
+    "message": "'ዓይነት' በሚለው ሥር 'ሁሉም ትራፊክ' የሚል እና 'ምንጭ' የሚለው ሥር ''የትም' ብለው ይጻፉ። ",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a security group in Amazon Web Services. Phrases in quotes should be translated and included untranslated in parentheses."
   },
   "cancel": {
-    "message": "Cancel",
+    "message": "ሰርዝ",
     "description": "This string appears across the application as a button. Clicking it aborts the current flow."
   },
   "city_ams": {
-    "message": "Amsterdam",
+    "message": "አምስተርዳም",
     "description": "This string appears in a card as part of the server creation flow. It allows the user to select the location to deploy a server. Refers to the city in the Netherlands."
   },
   "city_blr": {
-    "message": "Bangalore",
+    "message": "ባንጋሎር",
     "description": "This string appears in a card as part of the server creation flow. It allows the user to select the location to deploy a server. Refers to the city in India."
   },
   "city_fra": {
-    "message": "Frankfurt",
+    "message": "ፍራንክፈርት",
     "description": "This string appears in a card as part of the server creation flow. It allows the user to select the location to deploy a server. Refers to the city in Germany."
   },
   "city_lon": {
-    "message": "London",
+    "message": "ለንደን",
     "description": "This string appears in a card as part of the server creation flow. It allows the user to select the location to deploy a server. Refers to the city in England."
   },
   "city_nyc": {
-    "message": "New York",
+    "message": "ኒው ዮርክ",
     "description": "This string appears in a card as part of the server creation flow. It allows the user to select the location to deploy a server. Refers to the city in the United States."
   },
   "city_sfo": {
-    "message": "San Francisco",
+    "message": "ሳን ፍራንሲስኮ",
     "description": "This string appears in a card as part of the server creation flow. It allows the user to select the location to deploy a server. Refers to the city in the United States."
   },
   "city_sgp": {
-    "message": "Singapore",
+    "message": "ሲንጋፖር",
     "description": "This string appears in a card as part of the server creation flow. It allows the user to select the location to deploy a server. Refers to the capital of Singapore."
   },
   "city_tor": {
-    "message": "Toronto",
+    "message": "ቶሮንቶ",
     "description": "This string appears in a card as part of the server creation flow. It allows the user to select the location to deploy a server. Refers to the city in Canada."
   },
   "close": {
-    "message": "Close",
+    "message": "ይዝጉ",
     "description": "This string appears in dialogs as a button. Clicking it dismisses the dialog."
   },
   "confirmation_server_destroy": {
-    "message": "Existing users will lose access. This action cannot be undone.",
+    "message": "አሁን ያሉት ተጠቃሚዎች መግባት ይከለከላሉ። ይህ ድርጊት መልሶ አይስተካከልም።",
     "description": "This string appears in a dialog that requests user confirmation for destroying a server. It informs the user about the consequences of destroying a server. 'Destroy' in this context implies that the server will be deleted."
   },
   "confirmation_server_destroy_title": {
-    "message": "Destroy Server?",
+    "message": "አገልጋዩ ይጥፋ?",
     "description": "This string appears in a dialog that requests user confirmation for destroying a server. 'Destroy' in this context implies that the server will be deleted."
   },
   "confirmation_server_remove": {
-    "message": "This action removes your server from the Outline Manager, but does not block proxy access to users. You will still need to manually delete the Outline server from your host machine.",
+    "message": "ይህ ተግባር አገልጋዩን ከአውትላይን ማስተካከያው ላይ ያስወግደዋል፣ ሆኖም የወኪሉን ተጠቃሚዎች መግባት አይከለክላቸውም። ከአስተናጋጁ ማሽን የአውትላይን አገልጋዩን በራስዎ ማጥፋት ግን ይጠበቅብዎታል። ",
     "description": "This string appears in a dialog that requests user confirmation for removing a server from the application. It informs the user about the consequences of removing a server. 'Remove' in this context does not imply server deletion."
   },
   "confirmation_server_remove_title": {
-    "message": "Remove Server?",
+    "message": "ሰርቨሩ ይወገድ?",
     "description": "This string appears in a dialog that requests user confirmation for removing a server from the application. 'Remove' in this context does not imply server deletion."
   },
   "destroy": {
-    "message": "Destroy",
+    "message": "ይወገድ",
     "description": "This string appears as a button in a dialog that requests user confirmation for destroying a server. Clicking the button causes the server to be deleted."
   },
   "digitalocean_disconnect": {
-    "message": "Disconnect",
+    "message": "ግንኙነቱ ይቋረጥ",
     "description": "This string appears as a button in a dialog to disconnect the user's DigitalOcean account from the application. Clicking it signs the user out of DigitalOcean, a cloud server provider."
   },
   "digitalocean_disconnect_account": {
-    "message": "Disconnect DigitalOcean account",
+    "message": "የዲጂታልኦሽን አካውንቱ ግንኙነት ይቋረጥ",
     "description": "This string appears as a header in a dialog to disconnect the user's DigitalOcean account from the application. DigitalOcean is a cloud server provider name and should not be translated."
   },
   "digitalocean_unreachable": {
-    "message": "This error may be due to a firewall on your network or temporary connectivity issues with digitalocean.com.",
+    "message": "ይህ ስህተት የተፈጠረው በአውታረ መረብዎ ፋየርዎል ምክንያት አልያም ከdigitalocean.com ጋር መገናኘት አልቻሉም።",
     "description": "This string appears in a dialog as a paragraph. It is shown when a DigitalOcean server cannot be reached. DigitalOcean is a cloud server provider."
   },
   "done": {
-    "message": "Done",
+    "message": "ተከናውኗል",
     "description": "This string appears across the application as a button. It lets the user indicate that an action, such as entering text or reading a dialog, has been completed."
   },
   "error_connectivity": {
-    "message": "We're having trouble connecting to your DigitalOcean account. This is sometimes a temporary problem with DigitalOcean or with your internet connection. If retrying doesn't work, logging into DigitalOcean again should fix the problem.",
+    "message": "ከዲጂታልኦሽን አካውንትዎ ጋር የመገናኘት ችግር ገጥሞናል። ይህ አንዳንዴ የዲጂታልኦሽን ወይም የበይነመረብ ግንኙነትዎ ችግር ሊሆን ይችላል። ደግሞ መሞከር ካልሠራ፣ ዲጂታልኦሸን ውስጥ ደግሞ መግባት ችግሩን ይፈታዋል። ",
     "description": "This string appears in a dialog as a paragraph. The dialog is shown when an operation on a DigitalOcean server fails due to connectivity issues. The dialog displays buttons that allow the user to retry the operation. DigitalOcean is a cloud server provider name and should not be translated."
   },
   "error_connectivity_title": {
-    "message": "Connection problem",
+    "message": "የግንኙነት ችግር ",
     "description": "This string appears in a dialog as a header. The dialog is shown when an operation on a server fails due to connectivity issues. The dialog displays buttons that allow the user to retry the operation."
   },
   "error_do_account_info": {
-    "message": "Failed to get DigitalOcean account information",
+    "message": "የዲጂታልኦሽን አካውንት መረጃውን ማግኘት አልተቻለም",
     "description": "This string appears in an error notification toast. It is shown when there is an error retrieving the user's DigitalOcean account. DigitalOcean is a cloud server provider name and should not be translated."
   },
   "error_do_auth": {
-    "message": "Authentication with DigitalOcean failed",
+    "message": "በዲጂታልኦሽን ማረጋገጥ አልተቻለም",
     "description": "This string appears in an error notification toast. It is shown when there is an error when logging in to the user's DigitalOcean account. DigitalOcean is a cloud server provider name and should not be translated."
   },
   "error_do_regions": {
-    "message": "Failed to get list of available regions",
+    "message": "የሚሠሩትን አካባቢዎች ማግኘት አልተቻለም",
     "description": "This string appears in an error notification toast. It is shown when there is an error retrieving the regions available for server deployment."
   },
   "error_feedback": {
-    "message": "Failed to submit feedback. Please try again.",
+    "message": "ምላሽዎን መላክ አልተቻለም። እባክዎ ደግመው ይሞክሩ። ",
     "description": "This string appears in an error notification toast. It is shown when there is an error submitting the user's feedback."
   },
   "error_key_add": {
-    "message": "Failed to add key",
+    "message": "ቁልፍ መጨመር አልተቻለም።",
     "description": "This string appears in an error notification toast. It is shown when there is an error creating a server access key."
   },
   "error_key_remove": {
-    "message": "Failed to remove key",
+    "message": "ቁልፍ ማስወገድ አልተቻለም።",
     "description": "This string appears in an error notification toast. It is shown when there is an error deleting a server access key."
   },
   "error_key_rename": {
-    "message": "Failed to rename key",
+    "message": "ቁልፍ መልሶ መሠየም አልተቻለም",
     "description": "This string appears in an error notification toast. It is shown when there is an error renaming a server access key."
   },
   "error_keys_get": {
-    "message": "Could not load keys",
+    "message": "ቁልፎቹን ሊጭን አልቻለም",
     "description": "This string appears in an error notification toast. It is shown when there is an error retrieving a server access keys."
   },
-  "error_keys_port_bad_input": {
-    "message": "The port must be an integer between 1 and 65,535.",
-    "description": "This string appears in an inline error message.  It signifies that the input number for the port for new access keys is invalid."
-  },
-  "error_keys_port_in_use": {
-    "message": "The port is already in use on the server.",
-    "description": "This string appears in an inline error message.  It signifies that the input port for new access keys is already being used on the server and is unavailable."
-  },
   "error_licenses": {
-    "message": "Could not load licenses.",
+    "message": "ፈቃድ ሊጭን አልቻለም",
     "description": "This string appears in a dialog that shows the application's software licenses. It is shown instead of the licenses' text when loading them fails."
   },
   "error_metrics": {
-    "message": "Error setting metrics enabled",
+    "message": "የስህተት መለኪያው እየሠራ ነው",
     "description": "This string appears in an error notification toast. It is shown when there is an error enabling or disabling a server's metrics reporting."
   },
-  "error_network": {
-    "messages": "A network error occurred.",
-    "description": "This string indicates that an error happened due to network errors like not being connected to the internet."
-  },
-  "error_not_saved": {
-    "messages": "Not Saved",
-    "description": "This string appears in an error notification toast.  It signifies failure to submit user input to change the port number for new access keys."
-  },
   "error_server_creation": {
-    "message": "There was an error creating your Outline server.",
+    "message": "የአውትላይን አገልጋይዎን መፍጠር ላይ ስህተት ተከስቷል።",
     "description": "This string appears in an dialog as a paragraph. The dialog is shown when there is an creating a server; the user can retry the operation or destroy the server."
   },
   "error_server_destroy": {
-    "message": "Failed to destroy server",
+    "message": "አገልጋዩን ማጥፋት አልተቻለም።",
     "description": "This string appears in an error notification toast. It is shown when there is an error destroying a server."
   },
   "error_server_removed": {
-    "message": "$SERVER_NAME$ no longer present in your DigitalOcean account.",
+    "message": "1$SERVER_NAME$ የዲጂታልኦሽን አካውንትዎ ውስጥ የለም።",
     "description": "This string appears in an error notification toast. It is shown when a DigitalOcean server was destroyed outside the application to let the user know that it will not be displayed in the UI. DigitalOcean is a cloud server provider name and should not be translated.",
     "placeholders": {
       "SERVER_NAME": {
@@ -248,19 +232,19 @@
     }
   },
   "error_server_rename": {
-    "message": "Failed to rename server",
+    "message": "አገልጋይዎን መልሶ መሠየም አልተቻለም።",
     "description": "This string appears in an error notification toast. It is shown when there is an error renaming a server."
   },
   "error_server_unreachable": {
-    "message": "Your Outline Server was installed correctly, but we are not able to connect to it. Most likely this is because your server's firewall rules are blocking incoming connections. Please review them and make sure to allow incoming TCP connections on ports ranging from 1024 to 65535.",
+    "message": "አውትላይን አገልጋይዎ በትክክል ተጭኗል። ግን ማገናኘት አልቻልንም። የአገልጋይዎ የፋይርዎል መመሪያዎች እያገዱብን ሊሆን ይችላል። እባክዎ ያስተካክሉትና የቲሲፒ ግንኙነቶች ከ1024 እስከ 65535 እንዲሆን ያድርጉ። ",
     "description": "This string appears in dialog as a paragraph. The dialog is shown when a server is installed successfully but cannot be reached. The dialog provides possible solutions and displays buttons that allow the user to retry reaching the server."
   },
   "error_server_unreachable_title": {
-    "message": "Unable to connect to your Outline Server",
+    "message": "ከአውትላይን አገልጋይዎ ጋር መገናኘት አልተቻለም። ",
     "description": "This string appears in dialog as a header. The dialog is shown when a server is installed successfully but cannot be reached."
   },
   "error_servers_removed": {
-    "message": "$SERVER_NAMES$ no longer present in your DigitalOcean account.",
+    "message": "1$SERVER_NAMES$ ዲጂታልኦሽን አካውንቶ ውስጥ የለም።",
     "description": "This string appears in an error notification toast. It is shown when multiple DigitalOcean servers were destroyed outside the application to let the user know that they will not be displayed in the UI. DigitalOcean is a cloud server provider name and should not be translated.",
     "placeholders": {
       "SERVER_NAMES": {
@@ -269,64 +253,60 @@
       }
     }
   },
-  "error_unexpected": {
-    "message": "An unexpected error occurred.",
-    "description": "This string signifies that an error we didn't expect was encountered."
-  },
   "feedback_cloud_provider": {
-    "message": "Select cloud provider",
+    "message": "የክላውድ አቅራቢውን ይምረጡ",
     "description": "This string appears in the feedback dialog as an placeholder within a drop-down. Allows the user to select a cloud provider for certain feedback categories."
   },
   "feedback_cloud_provider_error": {
-    "message": "Please select a cloud provider.",
+    "message": "እባክዎ የክላውድ አቅራቢውን ይምረጡ",
     "description": "This string appears in the feedback dialog as an error message within a drop-down. The string appears when the user attempts to submit feedback without selecting a cloud provider."
   },
   "feedback_connection": {
-    "message": "Can't connect to my server",
+    "message": "ከአገልጋዬ ጋር መገናኘት አልቻልኩም፡፡",
     "description": "This string appears in the feedback dialog as an option within a drop-down of feedback categories. Indicates that the user cannot connect to their server."
   },
   "feedback_connection_others": {
-    "message": "Others can't connect to my server",
+    "message": "ሌሎች የእኔን ሰርቨር ሌሎች ማገናኘት አልቻሉም",
     "description": "This string appears in the feedback dialog as an option within a drop-down of feedback categories. Indicates that users who have been given access keys cannot connect to the server."
   },
   "feedback_disclaimer": {
-    "message": "Please note that our team is only able to answer feedback in English.",
+    "message": "እባክዎን ልብ ይበሉ፡- ቡድናችን በእንግሊዝኛ ቋንቋ ብቻ ለሚሰጡ ግብረ-መልሶች ብቻ ነው ምላሽ መስጠት የሚችለው ",
     "description": "This string appears in the feedback dialog as a paragraph under the feedback form. Lets the user know that, although the application is localized, our team can only respond to feedback in English."
   },
   "feedback_email": {
-    "message": "Email address (optional)",
+    "message": "ኢሜይል (ከፈለጉ ብቻ)",
     "description": "This string appears in the feedback dialog as a label of the email input form."
   },
   "feedback_error": {
-    "message": "Please enter feedback.",
+    "message": "ምላሽዎን ይጻፉ",
     "description": "This string appears in the feedback dialog as a paragraph below the feedback input form. It is displayed when the user clicks the submit button without having entered feedback in the input form."
   },
   "feedback_explanation_install": {
-    "message": "An error occurred while attempting to install Outline on your server. If you haven't been able to figure out a solution, please consider sending us feedback and telling us your email address (optional) so that we can get back to you.",
+    "message": "አውትላይንን አገልጋይዎ ላይ ለመጫን ሲሞከር ስህተት ተፈጥሯል። መፍትሔ ማግኘት ካልተቻልዎት እባክዎ ለእኛ ምላሽዎን በመጻፍ እና ኢሜይሎን (ከፈለጉ) በመናገር ተመልሰን እንድናግዝዎ ያድርጉ። ",
     "description": "This string appears in the feedback dialog as a paragraph above the feedback input form. The feedback dialog gets automatically displayed with this message when a server installation fails."
   },
   "feedback_general": {
-    "message": "General feedback",
+    "message": "ጠቅላላ ምላሽ",
     "description": "This string appears in the feedback dialog as an option within a drop-down of feedback categories. Indicates that the user is providing general feedback."
   },
   "feedback_install": {
-    "message": "Having trouble installing Outline",
+    "message": "አውትላይን ለመጫን ችግር አጋጥሞኛል",
     "description": "This string appears in the feedback dialog as an option within a drop-down of feedback categories. Indicates that the user cannot install Outline on their server."
   },
   "feedback_label": {
-    "message": "Your feedback",
+    "message": "ምላሽዎ",
     "description": "This string appears in the feedback dialog as a placeholder of the feedback input form."
   },
   "feedback_management": {
-    "message": "Having trouble managing my server",
+    "message": "አገልጋዬን ለማስተካከል ችግር አጋጠመኝ",
     "description": "This string appears in the feedback dialog as an option within a drop-down of feedback categories. Indicates that the user is having issues managing their server."
   },
   "feedback_other": {
-    "message": "Other",
+    "message": "ሌላ",
     "description": "This string appears in the feedback dialog as an option within a drop-down of cloud providers. Indicates that the user has a server on an unlisted cloud provider."
   },
   "feedback_privacy": {
-    "message": "Your feedback, email address (if provided) and additional information referred to in the $START_OF_LINK$privacy policy$END_OF_LINK$ will be sent to the Outline team.",
+    "message": "የእርሶን ምላሽ፣ የኢ-ሜል አድራሻ (ከተሰጠ) እና በ$START_OF_LINK$ ከተሰጠው ተጨማሪ መረጃ ጋር $END_OF_LINK$ የግል ምሥጢር ጥበቃ መመሪያ ላ በተገለጸው መሠረት ወደ አውትላይኑ ቡድን ተልኳል።",
     "description": "This string appears in the feedback dialog as paragraph below the feedback input form. Lets the user know how their feedback and personal information will be handled.",
     "placeholders": {
       "END_OF_LINK": {
@@ -338,23 +318,23 @@
     }
   },
   "feedback_submit": {
-    "message": "Submit",
+    "message": "ይላኩ",
     "description": "This string appears in the feedback dialog as a button. Clicking it submits the feedback form."
   },
   "feedback_suggestion": {
-    "message": "Suggestions",
+    "message": "ጥቆማዎች",
     "description": "This string appears in the feedback dialog as an option within a drop-down of feedback categories. Indicates that the user is providing a product suggestion."
   },
   "feedback_title_generic": {
-    "message": "Send Feedback",
+    "message": "ምላሽዎን ይላኩ",
     "description": "This string appears in the feedback dialog as a header."
   },
   "feedback_title_install": {
-    "message": "Outline Server Installation Failed",
+    "message": "የአውትላይን አገልጋይ ጭነቱ ተቋርጧል",
     "description": "This string appears in the feedback dialog as a header. The feedback dialog gets automatically displayed with this header when a server installation fails."
   },
   "gcp_firewall_assign_0": {
-    "message": "Navigate to the $START_OF_LINK$VM instances screen$END_OF_LINK$.",
+    "message": "ሐሰሳዎን $START_OF_LINK$ VM ወደ\n $END_OF_LINK$ የአብነት ሰሌዳ ያድርጉ።",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a firewall in Google Cloud Platform.",
     "placeholders": {
       "END_OF_LINK": {
@@ -366,23 +346,23 @@
     }
   },
   "gcp_firewall_assign_1": {
-    "message": "Click on the instance where you want to host Outline.",
+    "message": "አውትላይኑን ማስተናገድ የሚፈልጉት አብነት ላይ ይጫኑ",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a firewall in Google Cloud Platform."
   },
   "gcp_firewall_assign_2": {
-    "message": "Click 'EDIT' at the top of the VM Instance details screen.",
+    "message": "'አርትእ' የሚለውን ከVM አብነት ዝርዝር ሰሌዳ ላይ ክሊክ ያድርጉ ",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a firewall in Google Cloud Platform. 'EDIT' should be translated and included untranslated in parentheses. VM is an acronym for virtual machine."
   },
   "gcp_firewall_assign_3": {
-    "message": "Type 'outline' in the 'Network tags' field.",
+    "message": "'አውታረ መረቡ' ባጅ ማስገቢያ ላይ 'አውትላይን' ብለው ይጻፉ።",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a firewall in Google Cloud Platform. 'Network tags' should be translated and included untranslated in parentheses."
   },
   "gcp_firewall_assign_4": {
-    "message": "Click 'SAVE'.",
+    "message": "'ያስቀምጡ' የሚለውን ክሊክ ያድርጉ",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a firewall in Google Cloud Platform. 'SAVE' should be translated and included untranslated in parentheses."
   },
   "gcp_firewall_create_0": {
-    "message": "$START_OF_LINK$Add a new firewall rule$END_OF_LINK$ to your Compute Engine project.",
+    "message": "የአዲሱን $START_OF_LINK$ የፋየርዎል ደንብ \n$END_OF_LINK$ወደ ኮምፒዩት ኢንጂን ፕሮጀክትዎ ይጨምሩ",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a firewall in Google Cloud Platform. Compute Engine is a product of Google Cloud Platform and should not be translated.",
     "placeholders": {
       "END_OF_LINK": {
@@ -394,47 +374,47 @@
     }
   },
   "gcp_firewall_create_1": {
-    "message": "Type 'outline' in the 'Name' field.",
+    "message": "'አውትላይን'ን ' የሚለውን በ'ሥም'  ማስገቢያ ላይ ይጻፉ",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a firewall in Google Cloud Platform. 'Name' should be translated and included untranslated in parentheses."
   },
   "gcp_firewall_create_2": {
-    "message": "Type 'outline' in the 'Target tags' field.",
+    "message": "'አውትላይን'ን ' የሚል በ'ዒላማ ባጅ' ማስገቢያ ላይ ይጻፉ።",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a firewall in Google Cloud Platform. 'Target tags' should be translated and included untranslated in parentheses."
   },
   "gcp_firewall_create_3": {
-    "message": "Type '0.0.0.0/0' in the 'Source IP ranges' field.",
+    "message": "'0.0.0.0/0' የሚለውን 'የምንጪ አይፒ ዝርዝር' ላይ ይሙሉ።",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a firewall in Google Cloud Platform. 'Source IP ranges' should be translated and included untranslated in parentheses."
   },
   "gcp_firewall_create_4": {
-    "message": "Select 'Allow all' under 'Protocols and ports'.",
+    "message": "'በፕሮቶኮልስ እና ፖርትስ' ሥር 'ሁሉንም ይፍቀዱ' የሚለውን ይምረጡ።",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a firewall in Google Cloud Platform. 'Allow all' and 'Protocols and ports' should be translated and included untranslated in parentheses."
   },
   "gcp_firewall_create_5": {
-    "message": "Click 'Create'.",
+    "message": "'ይፍጠሩ' የሚለው ክሊክ ያድርጉ።",
     "description": "This string appears within the server setup view as an item of a list that provides instructions to configure a firewall in Google Cloud Platform. 'Create' should be translated and included untranslated in parentheses."
   },
   "key": {
-    "message": "Key",
+    "message": "ቁልፍ",
     "description": "This string appears in the server view as a placeholder for a newly created access key."
   },
   "manual_server_assign_firewall": {
-    "message": "Assign firewall rule",
+    "message": "የፋየርዎል መመሪያዎችን ያኑሩ",
     "description": "This string appears in the server setup view as a sub-header of a section that provides instructions to configure the server's firewall."
   },
   "manual_server_assign_group": {
-    "message": "Assign Security Group",
+    "message": "የደኅንነት ቡድን ያኑሩ",
     "description": "This string appears in the server setup view as a sub-header of a section that provides instructions to configure the server's firewall."
   },
   "manual_server_create_firewall": {
-    "message": "Create a firewall rule",
+    "message": "የፋይርዎል መመሪያዎችን ይፍጠሩ",
     "description": "This string appears in the server setup view as a sub-header of a section that provides instructions to configure the server's firewall."
   },
   "manual_server_create_group": {
-    "message": "Create a Security Group",
+    "message": "የደኅንነት ቡድን ይፍጠሩ",
     "description": "This string appears in the server setup view as a sub-header of a section that provides instructions to configure the server's firewall."
   },
   "manual_server_description": {
-    "message": "These steps will help you install Outline on a $CLOUD_PROVIDER$ Linux server.",
+    "message": "እነዚህ ተግባራት አውትላይንን 1$CLOUD_PROVIDER$ ላይኑክስ አገልጋይ ላይ ለመጫን ይረዱዎታል።",
     "description": "This string appears in the server setup view as a header. Lets the user know that the following sections provide instructions on how to install Outline on their server.",
     "placeholders": {
       "CLOUD_PROVIDER": {
@@ -444,31 +424,31 @@
     }
   },
   "manual_server_firewall": {
-    "message": "Configure your firewall",
+    "message": "የፋየርዎል ማስተካከያ ያድርጉ",
     "description": "This string appears in the server setup view as the header of a section that provides instructions to configure the server's firewall."
   },
   "manual_server_install_paste": {
-    "message": "Paste your installation output here.",
+    "message": "የቀዱትን የመጫኚያ ውጤት እዚህ ይለጥፉ።",
     "description": "This string appears in the server setup view as a header of a section that contains an input form. The user must enter the output of the server installation script to manage their server in the application."
   },
   "manual_server_install_run": {
-    "message": "Log into your server, and run this command.",
+    "message": "ወደ አገልጋይዎ ይዝለቁ እና ይህንን ትዕዛዝ ይፈፅሙ",
     "description": "This string appears in the server setup view as a header of a section that displays a command to install Outline on their server."
   },
   "manual_server_instructions": {
-    "message": "Instructions",
+    "message": "ትዕዛዛት",
     "description": "This string appears in the server setup view as a toggle of a section that provides instructions to configure the server's firewall."
   },
   "manual_server_show_me": {
-    "message": "Show me where",
+    "message": "የት እንደሆነ አሳየኝ",
     "description": "This string appears in the server setup view as a button. Clicking the button opens a link to the cloud server provider management console."
   },
   "manual_server_title": {
-    "message": "Follow the instructions below",
+    "message": "የሚከተሉትን ትዕዛዛት ይከተሉ",
     "description": "This string appears in the server setup view as a header. Communicates to the user that they need to perform a series of actions to install Outline on their server."
   },
   "metrics_description": {
-    "message": "Share anonymized metrics to help improve the reliability and performance of Outline, for you and for those you share your server with. $START_OF_LINK$Learn more.$END_OF_LINK$",
+    "message": "ለእርስዎ እና አገልጋይዎን ለሚያጋሯቸው ሰዎች የአውትላይንን አስተማማኝነት እና አሠራር ለማሻሻል ማንነትዎ የማይታወቅበትን ግምገማዎን ይላኩልን። \n1$START_OF_LINK$ ተጨማሪ ይወቁ\n2$END_OF_LINK$",
     "description": "This string appears in the server settings view as a paragraph next to a toggle that enables/disables server metrics reporting.",
     "placeholders": {
       "END_OF_LINK": {
@@ -480,223 +460,215 @@
     }
   },
   "metrics_share": {
-    "message": "Share metrics",
+    "message": "መለኪያ ያጋሩ",
     "description": "This string appears as a button of a dialog that prompts the user to share server metrics. Clicking it enables server metrics reporting."
   },
   "metrics_skip": {
-    "message": "Skip",
+    "message": "ይዝለሉ",
     "description": "This string appears as a button of a dialog that prompts the user to share server metrics. Clicking it dismisses the dialog."
   },
   "metrics_title": {
-    "message": "Metrics sharing",
+    "message": "መለኪያ ማጋሪያ",
     "description": "This string appears as the header of a dialog that prompts the user to share server metrics."
   },
   "nav_about": {
-    "message": "About",
+    "message": "ስለ",
     "description": "This string appears in an application drawer as a navigation link. Clicking it opens a dialog with information about Outline."
   },
   "nav_data_collection": {
-    "message": "Data collection",
+    "message": "ውሒብ መሰብሰብ",
     "description": "This string appears in an application drawer as a navigation link. Clicking it opens Outline's data collection policy in the browser."
   },
   "nav_feedback": {
-    "message": "Feedback",
+    "message": "ምላሽ",
     "description": "This string appears in an application drawer as a navigation link. Clicking it opens a dialog that allows the user to submit feedback."
   },
   "nav_help": {
-    "message": "Help",
+    "message": "ዕርዳታ",
     "description": "This string appears in an application drawer as a navigation link. Clicking it opens Outline's support website."
   },
   "nav_licenses": {
-    "message": "Licenses",
+    "message": "ፈቃዶች",
     "description": "This string appears in an application drawer as a navigation link. Clicking it opens a dialog listing Outline's software licenses."
   },
   "nav_privacy": {
-    "message": "Privacy",
+    "message": "የግል ደኅንነት",
     "description": "This string appears in an application drawer as a navigation link. Clicking it opens Outline's privacy policy in the browser."
   },
   "nav_terms": {
-    "message": "Terms",
+    "message": "ሁኔታዎች",
     "description": "This string appears in an application drawer as a navigation link. Clicking it opens Outline's terms of service in the browser."
   },
   "notification_app_update": {
-    "message": "An updated version of the Outline Manager has been downloaded. It will be installed when you restart the application.",
+    "message": "የአውትላይን ማስተካከያ የተሻሻለው ቅፅ ወርዷል። መተግበሪያውን ዘግተው ሲከፍቱት ይጫናል።",
     "description": "This string appears in a transient notification toast. It is shown when an update to the application is ready to install."
   },
   "notification_feedback_thanks": {
-    "message": "Thanks for helping us improve! We love hearing from you.",
+    "message": "እንድንሻሻል ስለሚረዱን እናመሰግናለን! አስተያየትዎን መስማት ያስደስታል።",
     "description": "This string appears in a transient notification toast. It is shown when the user has successfully submitted feedback."
   },
   "notification_key_added": {
-    "message": "Key added",
+    "message": "ቁልፍ ተጨምሯል",
     "description": "This string appears in a transient notification toast. It is shown when a server access key has been successfully created."
   },
   "notification_key_removed": {
-    "message": "Key removed",
+    "message": "ቁልፉ ተወግዷል",
     "description": "This string appears in a transient notification toast. It is shown when a server access key has been successfully removed."
   },
   "notification_server_destroyed": {
-    "message": "Server destroyed",
+    "message": "አገልጋዩ ተወግዷል",
     "description": "This string appears in a transient notification toast. It is shown when a server has been successfully destroyed."
   },
   "notification_server_exists": {
-    "message": "Server already added",
+    "message": "አገልጋዩ ተጨምሯል",
     "description": "This string appears in a transient notification toast. It is shown when the user attempts to add server that is already present in the application."
   },
   "notification_server_removed": {
-    "message": "Server removed",
+    "message": "አገልጋዩ ተወግዷል",
     "description": "This string appears in a transient notification toast. It is shown when a server has been successfully removed from the application."
   },
   "oauth_account_active": {
-    "message": "Your DigitalOcean account has been activated.",
+    "message": "የዲጂታልኦሽን አካውንትዎ ሥራ ጀምሯል",
     "description": "This string appears in the DigitalOcean account creation flow as a sub-header. Lets the user know their DigitalOcean account is active. DigitalOcean is a cloud provider name and should not be translated."
   },
   "oauth_account_active_tag": {
-    "message": "Account activated! Loading server locations...",
+    "message": "አካውንቱ እየሠራ ነው! የአገልጋዩን ቦታዎች እየጫነ ነው...",
     "description": "This string appears in the DigitalOcean account creation flow as a paragraph. Displayed when the user's DigitalOcean account has been successfully activated."
   },
   "oauth_activate_account": {
-    "message": "Activate your DigitalOcean account.",
+    "message": "የዲጂታልኦሽን አካውንትዎን ሥራ ያስጀምሩ",
     "description": "This string appears in the DigitalOcean account creation flow as a header. Displayed when the account has been created but not yet active. DigitalOcean is a cloud provider name and should not be translated."
   },
   "oauth_billing": {
-    "message": "Enter your billing information on digitalocean.com and return to the app once you are done.",
+    "message": "የክፍያ መረጃዎችዎን digitalocean.com ላይ ያስገቡ። ሲጨርሱ ወደ መተግበሪያው ይመለሱ።",
     "description": "This string appears in the DigitalOcean account creation flow as a sub-header. Prompts the user to enter their billing information on DigitalOcean's website."
   },
   "oauth_billing_tag": {
-    "message": "Enter billing information...",
+    "message": "የክፍያ መረጃዎችዎን ያስገቡ...",
     "description": "This string appears in the DigitalOcean account creation flow as a paragraph. Prompts the user to enter their billing information on DigitalOcean's website."
   },
   "oauth_connect_description": {
-    "message": "With your account, Outline makes it easy to create a server and get connected.",
+    "message": "በአካውንትዎ፣ አውትላይን አገልጋይ ፈጥሮልዎ ከበይነመረብ ጋር መገናኘትን ያቀልልዎታል።",
     "description": "This string appears in the DigitalOcean account creation flow as a sub-header. Displayed when the user has not yet authorized Outline to access their DigitalOcean account."
   },
   "oauth_connect_tag": {
-    "message": "Waiting to connect your account...",
+    "message": "አካውንትዎን ሊያገናኝልዎ እየጠበቀ ነው...",
     "description": "This string appears in the DigitalOcean account creation flow as a paragraph. Displayed when the user has not yet authorized Outline to access their DigitalOcean account."
   },
   "oauth_connect_title": {
-    "message": "Sign in or create an account with DigitalOcean.",
+    "message": "የዲጂታልኦሽን አካውንትዎን ይግቡ ወይም ይፍጠሩ",
     "description": "This string appears in the DigitalOcean account creation flow as a header. Displayed when the user has not yet signed in to DigitalOcean or created an account."
   },
   "oauth_sign_out": {
-    "message": "Sign Out",
+    "message": "ይውጡ",
     "description": "This string appears in the DigitalOcean account creation flow as a button. Displayed when the user has authorized Outline to access their account. Clicking it aborts the account creation flow and signs out the user."
   },
   "oauth_verify": {
-    "message": "Check your inbox for an email from DigitalOcean, and click the link in it to confirm your account.",
+    "message": "ከዲጂታልኦሽን የተላከልዎትን ኢሜይል ቼክ ያድርጉ እና የላክንልዎትን ኢሜይል ሊንክ ክሊክ በማድረግ አካውንትዎን መፍጠርዎን ያረጋግጡ።",
     "description": "This string appears in the DigitalOcean account creation flow as a sub-header. Displayed when the user has not yet entered billing information to activate their DigitalOcean account. DigitalOcean is a cloud provider name and should not be translated."
   },
   "oauth_verify_tag": {
-    "message": "Confirm your email...",
+    "message": "ኢሜይሎን ያረጋግጡ",
     "description": "This string appears in the DigitalOcean account creation flow as a paragraph. Displayed when the user has not yet confirmed the registered email for their DigitalOcean account."
   },
+  "oauth_verify_title": {
+    "message": "የዲጂታልኦሼን አካውንትዎን ያስነሱ",
+    "description": "This string appears in the DigitalOcean account creation flow as a title. Displayed when the user has not yet activated their DigitalOcean account."
+  },
   "okay": {
-    "message": "OK",
+    "message": "እሺ",
     "description": "This string appears across the application as a button. It lets the user acknowledge displayed information. Clicking dismisses the enclosing UI element."
   },
   "region_description": {
-    "message": "This is where your internet experience will come from.",
+    "message": "የበይነመረብ ተሞክሮዎ የሚመጣው ከዚህ ነው",
     "description": "This string appears within the server creation flow, as a sub-header of the server selection view. Lets the user know about the implications of selecting a server location."
   },
   "region_setup": {
-    "message": "Set up Outline",
+    "message": "አውትላይንን ይጫኑ",
     "description": "This string appears within the server creation flow, as a button of the server selection view. Clicking it creates an Outline server at the selected location. 'Set up' means install and run the Outline server software."
   },
   "region_title": {
-    "message": "Select the location of your server.",
+    "message": "አገልጋዩ ያለበትን ቦታ ይምረጡ",
     "description": "This string appears within the server creation flow, as the header of the server selection view."
   },
   "remove": {
-    "message": "Remove",
+    "message": "ያስወግዱ ",
     "description": "This string appears across the application as a button. It allows the user to confirm the removal of a server or access key."
   },
   "retry": {
-    "message": "Retry",
+    "message": "ደግመው ይሞክሩ",
     "description": "This string appears across the application as a button. It allows the user to retry a failed operation."
   },
-  "save": {
-    "message": "Save",
-    "description": "This string appears across the application as a button.  It allows the user to submit some input"
-  },
-  "saved": {
-    "message": "Saved",
-    "description": "This string appears across the application as a transient notification toast.  It appears when user input has been accepted."
-  },
-  "saving": {
-    "message": "Saving...",
-    "description": "This string appears across the application as a transient notification toast.  It appears when user input is being processed."
-  },
   "server_access": {
-    "message": "Server access",
+    "message": "አገልጋዩን መዳረሻ",
     "description": "This string appears within the server view as the header of a card that displays the number of server access keys."
   },
   "server_access_key_new": {
-    "message": "Add new key",
+    "message": "አዲስ ቁልፍ ይጨምሩ",
     "description": "This string appears within the server view as a button. Clicking it creates a new server access key."
   },
   "server_access_key_rename": {
-    "message": "Rename",
+    "message": "ሥሙን ይቀይሩ",
     "description": "This string appears within the server view as a button of a drop-down to manage a server access key. Clicking it renames the access key."
   },
   "server_access_keys": {
-    "message": "Access keys",
+    "message": "የመግቢያ ቁልፎች",
     "description": "This string appears within the server view as a header of a table column that displays server access keys."
   },
   "server_connect_devices": {
-    "message": "Connect your devices",
+    "message": "ከዲቫይስዎ ጋር ያገናኙት",
     "description": "This string appears within the server view as a sub-header for the default server access key. This key is meant to be used by the server administrator."
   },
   "server_connections": {
-    "message": "Connections",
+    "message": "ግንኙነት",
     "description": "This string appears within the server view as a header of the section that displays server information and access keys."
   },
   "server_data_transfer": {
-    "message": "Data transferred / 30 days",
+    "message": "በ30 ቀናት ውስጥ የተላለፈው ዳታ",
     "description": "This string appears within the server view as the header of a card that displays the amount of data transferred by the server."
   },
   "server_data_used": {
-    "message": "Allowance used / 30 days",
+    "message": "በ30 ቀናት የተጠቀሙት አበል",
     "description": "This string appears within the server view as the header of a card that displays the amount of data transferred by the server as a percentage of the total available data."
   },
   "server_destroy": {
-    "message": "Destroy server",
+    "message": "አገልጋዩን ያጥፉ",
     "description": "This string appears within the server view as a button of a drop-down to manage a server. Clicking it opens a confirmation dialog to destroy the server."
   },
   "server_help_access_key_description": {
-    "message": "Share access keys with friends, so they can connect to your Outline server. They can use the same access key on all their devices.",
+    "message": "የአውትላይን አገልጋይዎን እንዲጠቀሙበት የመግቢያ ቁልፎን ከወዳጆችዎ ጋር ይጋሩ። ሁሉም ዲቫይሶቻቸው ላይ ተመሳሳይ የመግቢያ ቁልፍ መጠቀም ይችላሉ። ",
     "description": "This string appears within a help bubble as a paragraph. The help bubble is displayed when a server is installed. Informs to the user how to share access to their server."
   },
   "server_help_access_key_next": {
-    "message": "Next",
+    "message": "ቀጣይ",
     "description": "This string appears within a help bubble as a button. Clicking it displays the next help bubble."
   },
   "server_help_access_key_title": {
-    "message": "Create keys, share access",
+    "message": "ቁልፍ ይፍጠሩ፣ በጋራ ተጠቀሙ",
     "description": "This string appears within a help bubble as a header. The help bubble provides information about sharing access to the server through access keys."
   },
   "server_help_connection_description": {
-    "message": "Click here to install the Outline client app, using your personal access key to your Outline server.",
+    "message": "የአውትላይን አገልጋይዎ የመግቢያ ቁልፍዎን ተጠቅመው የአውትላይን ተጠቃሚ መተግበሪያ ለመጫን እዚህ ክሊክ ያድርጉ",
     "description": "This string appears within a help bubble as a paragraph. Informs the user how to install the Outline clients and get connected to the server."
   },
   "server_help_connection_ok": {
-    "message": "Okay, got it!",
+    "message": "እሺ፣ ገባኝ",
     "description": "This string appears within a help bubble as a button. Clicking it dismisses the help bubble."
   },
   "server_help_connection_title": {
-    "message": "You are not connected yet!",
+    "message": "ገና የበይነመረብ ግንኙነት የልዎትም",
     "description": "This string appears within a help bubble as a header. The help bubble provides information about connecting to the server."
   },
   "server_keys": {
-    "message": "Keys",
+    "message": "ቁልፎች",
     "description": "This string appears within the server view as the unit of a card that displays the number of server access keys."
   },
   "server_my_access_key": {
-    "message": "My access key",
+    "message": "የመግቢያ ቁልፌ",
     "description": "This string appears within the server view as the header for the default server access key. This key is meant to be used by the server administrator."
   },
   "server_name": {
-    "message": "Outline Server $SEVER_LOCATION$",
+    "message": "የአውትላይን አገልጋይ 1$SEVER_LOCATION$",
     "description": "This string appears within the server view and in the application drawer. It is the default name for a newly created server.",
     "placeholders": {
       "SEVER_LOCATION": {
@@ -706,167 +678,167 @@
     }
   },
   "server_remove": {
-    "message": "Remove server",
+    "message": "አገልጋዩን ያስወግዱ ",
     "description": "This string appears within the server view as a button of a drop-down to manage a server. Clicking it opens a confirmation dialog to remove the server from the application."
   },
   "server_settings": {
-    "message": "Settings",
+    "message": "ማስተካከያ",
     "description": "This string appears within the server view as a header of the section that displays server settings."
   },
   "server_unreachable": {
-    "message": "Server unreachable",
+    "message": "አይደረሴ አገልጋይ",
     "description": "This string appears within a server view as a header. Displayed when a server's information cannot be displayed because it is not reachable."
   },
   "server_unreachable_description": {
-    "message": "We're having issues connecting to this server.",
+    "message": "ከአገልጋዩ ጋር የመገናኘት ችግር እየገጠመን ነው።",
     "description": "This string appears within a server view as a paragraph. Informs the user that a server's information cannot be displayed because it is not reachable."
   },
   "server_unreachable_managed_description": {
-    "message": "Try again or remove this server from the application.",
+    "message": "አገልጋዩን ከመተግበሪያው ላይ ለማስወገድ በድጋሚ ይሞክሩ",
     "description": "This string appears within a server view as a header. Displayed when a server's information cannot be displayed because it is not reachable. Prompts the user to retry contacting the server or remove it from the application."
   },
   "server_unreachable_manual_description": {
-    "message": "Try again or destroy this server and the virtual host.",
+    "message": "አገልጋዩን ከዚህ ምናባዊ መድረክ ያስወግዱ ወይም ደግመው ይሞክሩ",
     "description": "This string appears within a server view as a header. Displayed when a server's information cannot be displayed because it is not reachable. Prompts the user to retry contacting the server or destroy it."
   },
   "server_usage": {
-    "message": "Usage / 30 days",
+    "message": "30 ቀናት የተጠቀሙት",
     "description": "This string appears within the server view as a header of a table column that displays the breakdown of data usage by access key."
   },
   "servers_add": {
-    "message": "Add server",
+    "message": "አገልጋይ ይጨምሩ",
     "description": "This string appears in an application drawer as a button. Clicking it starts the server setup flow."
   },
   "servers_digitalocean": {
-    "message": "DigitalOcean servers",
+    "message": "የዲጂታልኦሽን አገልጋይ",
     "description": "This string appears in an application drawer as the header of a section that displays the list of DigitalOcean servers. DigitalOcean is a cloud server provider name and should not be translated."
   },
   "servers_manual": {
-    "message": "Servers",
+    "message": "አገልጋዮች",
     "description": "This string appears in an application drawer as the header of a section that displays a list of servers."
   },
   "settings_access_key_port": {
-    "message": "Port for new access keys",
+    "message": "አዲስ የመግቢያ ቁልፍ ማግኛ ",
     "description": "This string appears in the server settings view as a label for the server port number used to create new access keys."
   },
   "settings_metrics_header": {
-    "message": "Share anonymous metrics",
+    "message": "ድብቅ መለኪያ ያጋሩ",
     "description": "This string appears in the server settings view as a header of the section to configure server metrics reporting."
   },
   "settings_server_api_url": {
-    "message": "Management API URL",
+    "message": "ኤፒአይ ዩአርኤል ማስተካከያ",
     "description": "This string appears in the server settings view as a label for the server's management API URL. API stands for application programming interface; the acronym should not be translated."
   },
   "settings_server_cost": {
-    "message": "Monthly cost",
+    "message": "የወር ወጪ",
     "description": "This string appears in the server settings view as a label for the server's monthly cost."
   },
   "settings_server_creation": {
-    "message": "Created",
+    "message": "ተፈጥሯል",
     "description": "This string appears in the server settings view as a label for the server's creation date."
   },
   "settings_server_hostname": {
-    "message": "Hostname",
+    "message": "የአስተናጋጁ ሥም",
     "description": "This string appears in the server settings view as a label for the server's IP address or domain name."
   },
   "settings_server_id": {
-    "message": "Server ID",
+    "message": "የአገልጋዩ መለያ",
     "description": "This string appears in the server settings view as a label for the server's unique identifier."
   },
   "settings_server_info": {
-    "message": "Server Information",
+    "message": "የአገልጋዩ መረጃ",
     "description": "This string appears in the server settings view as a header of the section that displays server details."
   },
   "settings_server_location": {
-    "message": "Server location",
+    "message": "የአገልጋዩ መገኛ ቦታ",
     "description": "This string appears in the server settings view as a label for the server's location."
   },
   "settings_server_name": {
-    "message": "Name",
+    "message": "ሥም",
     "description": "This string appears in the server settings view as a label for the server's name."
   },
   "settings_server_rename": {
-    "message": "Set a new name for your server. Note that this will not be reflected on the devices of the users that you invited to connect to it.",
+    "message": "ለአገልጋዩ አዲስ ሥም ይምረጡ። ይህ ሥም አገልጋይዎን የሚጋሩት ሰዎች አያዩትም።",
     "description": "This string appears in the server settings view as a paragraph below the server's name. Informs the user about the implications of renaming a server."
   },
   "settings_transfer_limit": {
-    "message": "Data transfer allowance",
+    "message": "የሚተላለፍ ዳታ አበል",
     "description": "This string appears in the server settings view as a label for the server's data transfer allowance."
   },
   "setup_action": {
-    "message": "Set up",
+    "message": "ይጫኑ",
     "description": "This string appears in the server setup view as a button. Clicking it starts the server setup flow. 'Set up' means install and run the Outline server software."
   },
   "setup_advanced": {
-    "message": "Advanced",
+    "message": "የጎለበተ",
     "description": "This string appears in the server setup view as a label. Advanced in this context implies that the user will have to follow technical instructions to install Outline."
   },
   "setup_anywhere": {
-    "message": "Set up Outline anywhere",
+    "message": "አውትላይንን የትኛውም ቦታ ይጫኑ",
     "description": "This string appears in the server setup view as a header within a card. The card provides information about installing Outline on an arbitrary cloud server provider."
   },
   "setup_create": {
-    "message": "Create server",
+    "message": "አገልጋዩን ይፍጠሩ",
     "description": "This string appears in the server setup view as a button. Clicking it starts the server creation flow."
   },
   "setup_description": {
-    "message": "Don't have a server? Create an account with DigitalOcean.",
+    "message": "አገልጋይ የልዎትም? የዲጂታልኦሽን አካውንት ይፍጠሩ።",
     "description": "This string appears in the server setup view as a sub-header. Prompts the user to create a DigitalOcean account to deploy Outline servers. DigitalOcean is a cloud provider name and should not be translated."
   },
   "setup_do_cancel": {
-    "message": "Cancel at anytime",
+    "message": "በፈለጉ ጊዜ ይሰርዙ",
     "description": "This string appears in the server setup view as an item of a list describing Outline's features."
   },
   "setup_do_cost": {
-    "message": "Only US$5 a month",
+    "message": "በወር የአሜሪካ 1$5 ",
     "description": "This string appears in the server setup view as an item of a list describing Outline's features."
   },
   "setup_do_create": {
-    "message": "Create a new server with your DigitalOcean account for an additional US$5/30 days for 1 TB of data transfer.",
+    "message": "በ$5 አዲስ የዲጂታልኦሽን አገልጋይ ለ30 ቀናት 1 ቴራ ባይት ዳታ ለማስተላለፍ ይፍጠሩ።",
     "description": "This string appears in the server setup view as a paragraph within a card. Describes Outline servers' features when deployed on DigitalOcean. DigitalOcean is a cloud provider name and should not be translated; TB is an abbreviation for terabyte and should not be translated"
   },
   "setup_do_data": {
-    "message": "1 TB data transfer allowance",
+    "message": "የ1 ቴራ ባይት ዳታ ማስተላለፊያ አበል",
     "description": "This string appears in the server setup view as an item of a list describing Outline's features. Refers to the monthly amount of transfer data offered by a cloud server provider. TB is an abbreviation for terabyte and should not be translated."
   },
   "setup_do_description": {
-    "message": "This could take up to two minutes. You can destroy this server at anytime.",
+    "message": "ይህ ሁለት ደቂቃ ያህል ሊወስድ ይችላል። አገልጋዩን በፈለጉት ጊዜ ማስወገድ ይችላሉ። ",
     "description": "This string appears in the server setup view as a sub-header. Displayed when a server is being created along a progress bar."
   },
   "setup_do_easiest": {
-    "message": "Easiest setup process",
+    "message": "በጣም ቀላሉ የመጫን ሒደት",
     "description": "This string appears in the server setup view as an item of a list describing Outline's features."
   },
   "setup_do_title": {
-    "message": "Setting up Outline.",
+    "message": "አውትላይን እየተጫነ ነው።",
     "description": "This string appears in the server setup view as a header. Displayed when a server is being created along a progress bar."
   },
   "setup_firewall_instructions": {
-    "message": "Firewall instructions",
+    "message": "የፋየርዎል ትዕዛዞች",
     "description": "This string appears in the server setup view as the header of a section that provides instructions to configure the server's firewall."
   },
   "setup_recommended": {
-    "message": "Recommended",
+    "message": "ተመራጭ",
     "description": "This string appears in the server setup view as a label. Describes Outline servers deployment on DigitalOcean, which is easier from a user perspective."
   },
   "setup_simple_commands": {
-    "message": "Simple install commands",
+    "message": "ቀላል የመጫኛ ትዕዛዛት",
     "description": "This string appears in the server setup view as an item of a list describing Outline's features."
   },
   "setup_step-by-step": {
-    "message": "Step-by-step set-up guide",
+    "message": "ደረጃ በደረጃ የመጫኛ መመሪያ",
     "description": "This string appears in the server setup view as an item of a list describing Outline's features."
   },
   "setup_tested": {
-    "message": "Tested on VULTR, Linode, and Liquid Web",
+    "message": "ቩልትር፣ ሊኖድ እና ሊኪዩድ ገጾች ላይ የተሞከረ",
     "description": "This string appears in the server setup view as an item of a list describing Outline's features. VULTR, Linode, and Liquid Web a cloud provider names and should not be translated."
   },
   "setup_title": {
-    "message": "Choose a cloud service to set up Outline.",
+    "message": "አውትላይንን ለመጫን ክላውድ አገልግሎት ይምረጡ",
     "description": "This string appears in the server setup view as a header. Prompts the user to create deploy Outline servers on the cloud provider of their choice. 'Set up' means install and run the Outline server software."
   },
   "share_description": {
-    "message": "Copy this invitation and send it from a communication tool you trust. $START_OF_LINK$Need help?$END_OF_LINK$",
+    "message": "ይህንን ግብዣ ይቅዱና ወደሚያምኑት የመገናኛ መሣሪያ ይላኩት። \n1$START_OF_LINK$ እርዳታ ይፈልጋሉ?\n2$END_OF_LINK$",
     "description": "This string appears as a sub-header of a dialog that provides instructions on how to share access to a server.",
     "placeholders": {
       "END_OF_LINK": {
@@ -878,35 +850,35 @@
     }
   },
   "share_invite": {
-    "message": "You\u2019re invited to connect to my Outline server. Use it to access the open internet, no matter where you are. Follow the instructions on your invitation link below to download the Outline App and get connected.",
+    "message": "የኔን አውትላይን አገልጋይ መጋራት እንዲችሉ ጋብዤዎታለሁ። የትም ሆነው ቢሆን በይነመረብ እንዳሻዎ ሊጠቀሙበት ይችላሉ። የአውትላይን መተግበሪያውን ለማውረድ እና ከበይነመረብ ለመገናኘት የሚከተሉትን ትዕዛዛት ይከተሉ። ",
     "description": "This string appears as a paragraph within a dialog that provides an invitation to share access to a server. Belongs to the instructions for the user with whom access is being shared."
   },
   "share_invite_copied": {
-    "message": "Copied to clipboard",
+    "message": "ቅጂ ተይዟል",
     "description": "This string appears as a label within a dialog that provides an invitation to share access to a server. Displayed when the user clicks a button to copy the invitation text to the clipboard."
   },
   "share_invite_copy": {
-    "message": "Copy invitation",
+    "message": "ግብዣውን ይቅዱ",
     "description": "This string appears as a button within a dialog that provides an invitation to share access to a server. Clicking it copies the invitation instructions text to the clipboard."
   },
   "share_invite_copy_access_key": {
-    "message": "Copy your access key:",
+    "message": "የመግቢያ ቁልፉን ይቅዱ",
     "description": "This string appears as a paragraph within a dialog that provides an invitation to share access to a server. Belongs to the instructions for the user with whom access is being shared."
   },
   "share_invite_instructions": {
-    "message": "Follow our invitation instructions on GitHub:",
+    "message": "ጊትኸብ ላይ ያለውን የግብዣ ትዕዛዞች ይከተሉ",
     "description": "This string appears as a list item within a dialog that provides an invitation to share access to a server. Belongs to the instructions for the user with whom access is being shared."
   },
   "share_invite_trouble": {
-    "message": "Having trouble accessing the invitation link?",
+    "message": "የግብዛ መገናኛውን ለማግኘት ችግር ገጠምዎት?",
     "description": "This string appears as a paragraph within a dialog that provides an invitation to share access to a server. Belongs to the instructions for the user with whom access is being shared."
   },
   "share_title": {
-    "message": "Share access",
+    "message": "መግቢያዎን ያጋሩ",
     "description": "This string appears as the header of a dialog that provides an invitation to share access to a server."
   },
   "terms_of_service": {
-    "message": "I have read and understood the $START_OF_LINK$Outline Terms of Service$END_OF_LINK$",
+    "message": "1 የ$START_OF_LINK$ አውትላይን መመሪያዎችን አንብቤ ተረድቻለሁ።\n2$END_OF_LINK$",
     "description": "This string appears within an overlay the first time the user runs the app. Prompts the user to review and accept Outline's terms of service.",
     "placeholders": {
       "END_OF_LINK": {

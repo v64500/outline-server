@@ -52,7 +52,27 @@ paths:
           description: The requested port wasn't an integer from 1 through 65535, or the request had no port parameter.
         '409':
           description: The requested port was already in use by another service.
-  
+  /server/data-usage-timeframe:
+    put:
+      description: Sets the sliding timeframe for measuring data usage and enforcing access keys data limits.
+      tags:
+        - Server
+        - Data limit
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DataUsageTimeframe"
+            examples:
+              '0':
+                value: "{hours: 24}"
+      responses:
+        '204':
+          description: The data usage timeframe was sucessfully changed.
+        '400':
+          description: Invalid timeframe value.
+
   /name:
     put:
       description: Renames the server
@@ -165,26 +185,26 @@ paths:
         content:
           application/json:
             schema:
-              type: object
-              properties:
-                name:
-                  type: string
+              $ref: "#/components/schemas/DataUsage"
+            examples:
+              '0':
+                value: "{bytes: 10000}"
       responses:
         '204':
           description: Access key renamed successfully
         '404':
           description: Access key inexistent
-  /access-keys/{id}/quota:
+  /access-keys/{id}/data-limit:
     put:
-      description: Sets an access key data transfer quota
+      description: Sets an access key data transfer limit
       tags:
         - Access Key
-        - Quota
+        - Limit
       parameters:
         - name: id
           in: path
           required: true
-          description: The id of the access key to set a quota
+          description: The id of the access key to set a limit
           schema:
             type: string
       requestBody:
@@ -192,30 +212,32 @@ paths:
         content:
             application/json:
               schema:
-                $ref: "#/components/schemas/AccessKeyQuota"
+                $ref: "#/components/schemas/DataUsage"
               examples:
                 '0':
-                  value: "{quotaBytes: 1000000, windowHours: 24}"
+                  value: "{bytes: 10000}"
       responses:
         '204':
-          description: Access key quota set successfully
+          description: Access key limit set successfully
+        '400':
+          description: Invalid data limit
         '404':
           description: Access key inexistent
     delete:
-      description: Removes an access key data transfer quota, lifting data transfer restrictions on the key.
+      description: Removes an access key data transfer limit, lifting data transfer restrictions on the key.
       tags:
         - Access Key
-        - Quota
+        - Limit
       parameters:
         - name: id
           in: path
           required: true
-          description: The id of the access key to delete a quota
+          description: The id of the access key to delete a limit
           schema:
             type: string
       responses:
         '204':
-          description: Access key quota deleted successfully.
+          description: Access key limit deleted successfully.
         '404':
           description: Access key inexistent
   /metrics/transfer:
@@ -292,18 +314,21 @@ components:
           type: number
         portForNewAccessKeys:
           type: integer
-    AccessKeyQuota:
+        dataUsageTimeframe:
+          $ref: "#/components/schemas/DataUsageTimeframe"
+
+    DataUsageTimeframe:
       properties:
-        data:
-          type: object
-          properties:
-            bytes:
-              type: integer
-        window:
-          type: object
-          properties:
-            hours:
-              type: integer
+        hours:
+          type: integer
+          minimum: 1
+
+    DataUsage:
+      properties:
+        bytes:
+          type: integer
+          minimum: 0
+
     AccessKey:
       required:
         - id
@@ -320,5 +345,5 @@ components:
           type: string
         accessUrl:
           type: string
-        quota:
-          $ref: "#/components/schemas/AccessKeyQuota"
+        limit:
+          $ref: "#/components/schemas/DataUsage"
