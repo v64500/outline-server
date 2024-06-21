@@ -12,10 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM golang:1-alpine
+FROM docker.io/golang:1-alpine
 
 # curl for fetching pages using the local proxy
 RUN apk add --no-cache curl git
-RUN go get github.com/shadowsocks/go-shadowsocks2
+RUN go install github.com/shadowsocks/go-shadowsocks2@v0.1.5
 
 ENTRYPOINT [ "sh" ]

@@ -12,12 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import * as sentry from '@sentry/types';
 import * as express from 'express';
 
-import {postSentryEventToSalesforce, shouldPostEventToSalesforce} from './post_sentry_event_to_salesforce';
+import {
+  postSentryEventToSalesforce,
+  shouldPostEventToSalesforce,
+} from './post_sentry_event_to_salesforce';
+import {SentryEvent} from './event';
 
-exports.postSentryEventToSalesforce = (req: express.Request, res: express.Response) => {
+exports.postSentryEventToSalesforce = (req: express.Request, res: express.Response<string>) => {
   if (req.method !== 'POST') {
     return res.status(405).send('Method not allowed');
   }
@@ -25,23 +28,26 @@ exports.postSentryEventToSalesforce = (req: express.Request, res: express.Respon
     return res.status(400).send('Missing request body');
   }
 
-  const sentryEvent: sentry.SentryEvent = req.body.event;
+  const sentryEvent: SentryEvent = req.body.event;
   if (!sentryEvent) {
     return res.status(400).send('Missing Sentry event');
   }
+  const eventId = sentryEvent.event_id?.replace(/\n|\r/g, '');
   if (!shouldPostEventToSalesforce(sentryEvent)) {
+    console.log('Not posting event:', eventId);
     return res.status(200).send();
   }
   // Use the request message if SentryEvent.message is unpopulated.
   sentryEvent.message = sentryEvent.message || req.body.message;
   postSentryEventToSalesforce(sentryEvent, req.body.project)
-      .then(() => {
-        res.status(200).send();
-      })
-      .catch((e) => {
-        console.error(e);
-        // Send an OK response to Sentry - they don't need to know about errors with posting to
-        // Salesforce.
-        res.status(200).send();
-      });
+    .then(() => {
+      console.log('Successfully posted event:', eventId);
+      res.status(200).send();
+    })
+    .catch((e) => {
+      console.error(e);
+      // Send an OK response to Sentry - they don't need to know about errors with posting to
+      // Salesforce.
+      res.status(200).send();
+    });
 };

@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM gcr.io/distroless/python3
+# Pin to a known good signed image to avoid failures from the Docker notary service
+FROM gcr.io/distroless/python3@sha256:58087520b3c929fe77e1ef3fc95062dbe80bbda265e0e7966c4997c71a9636ea
+# The python SimpleHTTPServer doesn't quit with SIGTERM, so we use SIGKILL.
+STOPSIGNAL SIGKILL
 COPY index.html .
 ENTRYPOINT ["python", "-m", "http.server", "80"]

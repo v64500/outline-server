@@ -13,28 +13,67 @@
 // limitations under the License.
 
 import * as child_process from 'child_process';
-import * as fs from 'fs';
 import * as jsyaml from 'js-yaml';
 import * as mkdirp from 'mkdirp';
 import * as path from 'path';
 
+import * as file from '../infrastructure/file';
 import * as logging from '../infrastructure/logging';
 import {ShadowsocksAccessKey, ShadowsocksServer} from '../model/shadowsocks_server';
 
 // Runs outline-ss-server.
 export class OutlineShadowsocksServer implements ShadowsocksServer {
   private ssProcess: child_process.ChildProcess;
-  private ipCountryFilename = '';
+  private ipCountryFilename?: string;
+  private ipAsnFilename?: string;
+  private isAsnMetricsEnabled = false;
+  private isReplayProtectionEnabled = false;
 
-  // configFilename is the location for the outline-ss-server config.
+  /**
+   * @param binaryFilename The location for the outline-ss-server binary.
+   * @param configFilename The location for the outline-ss-server config.
+   * @param verbose Whether to run the server in verbose mode.
+   * @param metricsLocation The location from where to serve the Prometheus data metrics.
+   */
   constructor(
-      private readonly configFilename: string, private readonly verbose: boolean,
-      private readonly metricsLocation: string) {}
+    private readonly binaryFilename: string,
+    private readonly configFilename: string,
+    private readonly verbose: boolean,
+    private readonly metricsLocation: string
+  ) {}
 
-  // Annotates the Prometheus data metrics with countries.
-  // ipCountryFilename is the location of the GeoLite2-Country.mmdb file.
-  enableCountryMetrics(ipCountryFilename: string): OutlineShadowsocksServer {
+  /**
+   * Configures the Shadowsocks Server with country data to annotate Prometheus data metrics.
+   * @param ipCountryFilename The location of the ip-country.mmdb IP-to-country database file.
+   */
+  configureCountryMetrics(ipCountryFilename: string): OutlineShadowsocksServer {
     this.ipCountryFilename = ipCountryFilename;
+    return this;
+  }
+
+  /**
+   * Configures the Shadowsocks Server with ASN data to annotate Prometheus data metrics.
+   * @param ipAsnFilename The location  of the ip-asn.mmdb IP-to-ASN database file.
+   */
+  configureAsnMetrics(ipAsnFilename: string): OutlineShadowsocksServer {
+    this.ipAsnFilename = ipAsnFilename;
+    return this;
+  }
+
+  /** Annotates the Prometheus data metrics with ASN. */
+  enableAsnMetrics(enable: boolean) {
+    if (enable && !this.ipAsnFilename) {
+      throw new Error('Cannot enable ASN metrics: no ASN database filename set');
+    }
+    const valueChanged = this.isAsnMetricsEnabled != enable;
+    this.isAsnMetricsEnabled = enable;
+    if (valueChanged && this.ssProcess) {
+      this.ssProcess.kill('SIGTERM');
+    }
+  }
+
+  enableReplayProtection(): OutlineShadowsocksServer {
+    this.isReplayProtectionEnabled = true;
     return this;
   }
 
@@ -57,20 +96,23 @@ export class OutlineShadowsocksServer implements ShadowsocksServer {
       const keysJson = {keys: [] as ShadowsocksAccessKey[]};
       for (const key of keys) {
         if (!isAeadCipher(key.cipher)) {
-          logging.error(`Cipher ${key.cipher} for access key ${
-              key.id} is not supported: use an AEAD cipher instead.`);
+          logging.error(
+            `Cipher ${key.cipher} for access key ${key.id} is not supported: use an AEAD cipher instead.`
+          );
           continue;
         }
+
         keysJson.keys.push(key);
       }
-      const ymlTxt = jsyaml.safeDump(keysJson, {'sortKeys': true});
+
       mkdirp.sync(path.dirname(this.configFilename));
-      fs.writeFile(this.configFilename, ymlTxt, 'utf-8', (err) => {
-        if (err) {
-          reject(err);
-        }
+
+      try {
+        file.atomicWriteFileSync(this.configFilename, jsyaml.safeDump(keysJson, {sortKeys: true}));
         resolve();
-      });
+      } catch (error) {
+        reject(error);
+      }
     });
   }
 
@@ -79,16 +121,24 @@ export class OutlineShadowsocksServer implements ShadowsocksServer {
     if (this.ipCountryFilename) {
       commandArguments.push('-ip_country_db', this.ipCountryFilename);
     }
+    if (this.isAsnMetricsEnabled && this.ipAsnFilename) {
+      commandArguments.push('-ip_asn_db', this.ipAsnFilename);
+    }
     if (this.verbose) {
       commandArguments.push('-verbose');
     }
-    this.ssProcess = child_process.spawn('/root/shadowbox/bin/outline-ss-server', commandArguments);
+    if (this.isReplayProtectionEnabled) {
+      commandArguments.push('--replay_history=10000');
+    }
+    logging.info('======== Starting Outline Shadowsocks Service ========');
+    logging.info(`${this.binaryFilename} ${commandArguments.map((a) => `"${a}"`).join(' ')}`);
+    this.ssProcess = child_process.spawn(this.binaryFilename, commandArguments);
     this.ssProcess.on('error', (error) => {
       logging.error(`Error spawning outline-ss-server: ${error}`);
     });
     this.ssProcess.on('exit', (code, signal) => {
       logging.info(`outline-ss-server has exited with error. Code: ${code}, Signal: ${signal}`);
-      logging.info(`Restarting`);
+      logging.info('Restarting');
       this.start();
     });
     // This exposes the outline-ss-server output on the docker logs.

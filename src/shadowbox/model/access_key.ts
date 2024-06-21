@@ -12,10 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {DataUsageTimeframe} from '../model/metrics';
-
 export type AccessKeyId = string;
-export type AccessKeyMetricsId = string;
 
 // Parameters needed to access a Shadowsocks proxy.
 export interface ProxyParams {
@@ -29,8 +26,10 @@ export interface ProxyParams {
   readonly password: string;
 }
 
-// Data transfer measured in bytes.
-export interface DataUsage { readonly bytes: number; }
+// Data transfer allowance, measured in bytes. Must be a serializable JSON object.
+export interface DataLimit {
+  readonly bytes: number;
+}
 
 // AccessKey is what admins work with. It gives ProxyParams a name and identity.
 export interface AccessKey {
@@ -38,35 +37,50 @@ export interface AccessKey {
   readonly id: AccessKeyId;
   // Admin-controlled, editable name for this access key.
   readonly name: string;
-  // Used in metrics reporting to decouple from the real id. Can change.
-  readonly metricsId: AccessKeyMetricsId;
   // Parameters to access the proxy
   readonly proxyParams: ProxyParams;
-  // Admin-controlled, data transfer limit for this access key. Unlimited if unset.
-  readonly dataLimit?: DataUsage;
-  // Data transferred by this access key over a timeframe specified by the server.
-  readonly dataUsage: DataUsage;
-  // Returns whether the access key has exceeded its data transfer limit.
-  isOverDataLimit(): boolean;
+  // Whether the access key has exceeded the data transfer limit.
+  readonly isOverDataLimit: boolean;
+  // The key's current data limit.  If it exists, it overrides the server default data limit.
+  readonly dataLimit?: DataLimit;
+}
+
+export interface AccessKeyCreateParams {
+  // The unique identifier to give the access key. Throws if it exists.
+  readonly id?: AccessKeyId;
+  // The encryption method to use for the access key.
+  readonly encryptionMethod?: string;
+  // The name to give the access key.
+  readonly name?: string;
+  // The password to use for the access key.
+  readonly password?: string;
+  // The data transfer limit to apply to the access key.
+  readonly dataLimit?: DataLimit;
+  // The port number to use for the access key.
+  readonly portNumber?: number;
 }
 
 export interface AccessKeyRepository {
-  // Creates a new access key. Parameters are chosen automatically.
-  createNewAccessKey(): Promise<AccessKey>;
+  // Creates a new access key. Parameters are chosen automatically if not provided.
+  createNewAccessKey(params?: AccessKeyCreateParams): Promise<AccessKey>;
   // Removes the access key given its id. Throws on failure.
   removeAccessKey(id: AccessKeyId);
+  // Returns the access key with the given id. Throws on failure.
+  getAccessKey(id: AccessKeyId): AccessKey;
   // Lists all existing access keys
   listAccessKeys(): AccessKey[];
   // Changes the port for new access keys.
   setPortForNewAccessKeys(port: number): Promise<void>;
+  // Changes the hostname for access keys.
+  setHostname(hostname: string): void;
   // Apply the specified update to the specified access key. Throws on failure.
   renameAccessKey(id: AccessKeyId, name: string): void;
-  // Gets the metrics id for a given Access Key.
-  getMetricsId(id: AccessKeyId): AccessKeyMetricsId|undefined;
-  // Sets the transfer limit for the specified access key. Throws on failure.
-  setAccessKeyDataLimit(id: AccessKeyId, limit: DataUsage): Promise<void>;
-  // Clears the transfer limit for the specified access key. Throws on failure.
-  removeAccessKeyDataLimit(id: AccessKeyId): Promise<void>;
-  // Sets the data usage timeframe for access key data limit enforcement. Throws on failure.
-  setDataUsageTimeframe(timeframe: DataUsageTimeframe): Promise<void>;
+  // Sets a data transfer limit for all access keys.
+  setDefaultDataLimit(limit: DataLimit): void;
+  // Removes the access key data transfer limit.
+  removeDefaultDataLimit(): void;
+  // Sets access key `id` to use the given custom data limit.
+  setAccessKeyDataLimit(id: AccessKeyId, limit: DataLimit): void;
+  // Removes the custom data limit from access key `id`.
+  removeAccessKeyDataLimit(id: AccessKeyId): void;
 }
